@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Quicksand:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+@media all and (max-width: 150em) {
+  html {
+    font-size: 80%;
+  }
+}
+@media all and (max-width: 88.75em) {
+  html {
+    font-size: 57%;
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #8080802e;
+}
+.container {
+  background: white;
+  width: 100rem;
+  height: 59rem;
+  border-radius: 4rem 4rem 17rem 4rem;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  width: 87rem;
+  margin-top: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+.input-span {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.input-names {
+  width: fit-content;
+  text-transform: capitalize;
+  margin: 1rem;
+  color: #646363;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.input {
+  height: 4rem;
+  width: 14rem;
+  border-radius: 1rem;
+  border: 1px solid #80808070;
+  padding-left: 1.2rem;
+}
+.input::placeholder,
+.input[type="text"] {
+  color: #00000096;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.input[type="text"] {
+  color: black;
+}
+.input:focus {
+  outline: none;
+  border: 1px solid rgb(255, 116, 116);
+}
+.input:focus {
+  outline: none;
+  border: 1px solid rgb(125, 116, 255);
+}
+.input-span small {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 14rem;
+  margin-top: 0.8rem;
+  color: red;
+  text-transform: capitalize;
+  letter-spacing: 0.5;
+}
+.age_calculate {
+  width: 7rem;
+  position: absolute;
+  right: 6rem;
+  border-radius: 62%;
+  display: flex;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.svgs {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 2rem;
+  width: 97rem;
+}
+.svgs svg {
+  background: #770fdf;
+  border-radius: 74%;
+}
+.line {
+  height: 2.5px;
+  background: #64636336;
+  width: 82rem;
+  position: relative;
+  right: -8rem;
+}
+.lowerPart {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7rem;
+}
+.lowerPart div {
+  font-size: 7rem;
+  font-weight: 900;
+  display: flex;
+}
+.firstPart span,
+.SecPart span,
+.thirdPart span {
+  color: #770fdf;
+  font-family: "Poppins", sans-serif;
+}
+.firstPart p,
+.SecPart p,
+.thirdPart p {
+  font-family: "Poppins", sans-serif;
+  margin-left: 2rem;
+  text-transform: capitalize;
+}

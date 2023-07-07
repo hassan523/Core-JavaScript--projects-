@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Multi Step Form Main</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- /************************* left panel start ********************************/ -->
+      <div class="left-panel">
+        <div id="step-1" class="step">
+          <p class="step-num-1 step-num step-active">1</p>
+          <div class="step-info">
+            <p>step 1</p>
+            <b>your info</b>
+          </div>
+        </div>
+        <div id="step-2" class="step">
+          <p class="step-num-2 step-num">2</p>
+          <div class="step-info">
+            <p>step 2</p>
+            <b>select plan</b>
+          </div>
+        </div>
+        <div id="step-3" class="step">
+          <p class="step-num-3 step-num">3</p>
+          <div class="step-info">
+            <p>step 3</p>
+            <b>add-ons</b>
+          </div>
+        </div>
+        <div id="step-4" class="step">
+          <p class="step-num-4 step-num">4</p>
+          <div class="step-info">
+            <p>step 4</p>
+            <b>summary</b>
+          </div>
+        </div>
+      </div>
+      <!-- /**************************** left panel end ********************************/ -->
+
+      <!-- /************************* right panel start ********************************/ -->
+
+      <div class="right-panel">
+        <!-- /************************* panel-1 start ********************************/ -->
+
+        <div class="panel-1 page">
+          <!-- panel-1 info -->
+
+          <span class="panel-1__info_container">
+            <h1 class="panel-1_h1">personal info</h1>
+            <p class="panel-1_p">
+              Please provide your name,email address,and phone number
+            </p>
+          </span>
+
+          <!-- panel-1-inputs -->
+
+          <div class="inputs">
+            <div id="inputs-1" class="panel-1_input">
+              <span class="panel-1_span"
+                ><label>Name</label> <small></small
+              ></span>
+              <input type="text" class="inputFeild" id="input_name" />
+            </div>
+            <div id="inputs-2" class="panel-1_input">
+              <span class="panel-1_span"
+                ><label>email address</label> <small></small
+              ></span>
+              <input type="email" class="inputFeild" id="input_email" />
+            </div>
+            <div id="inputs-3" class="panel-1_input">
+              <span class="panel-1_span"
+                ><label>phone number</label> <small></small
+              ></span>
+              <input type="number" class="inputFeild" id="input_number" />
+            </div>
+          </div>
+
+          <!-- panel-1-buttons -->
+          <div class="buttons">
+            <button class="btn_next" id="panel-1-btn_next">next step</button>
+          </div>
+        </div>
+
+        <!-- /************************* panel-1 end **********************************/ -->
+
+        <!-- /************************* panel-2 start ********************************/ -->
+
+        <div class="panel-2 page">
+          <!-- panel-2 info -->
+
+          <span class="panel-2__info_container">
+            <h1 class="panel-2_h1">select your plan</h1>
+            <p class="panel-2_p">
+              you have the option of monthly or yearly billing
+            </p>
+          </span>
+          <!-- plans -->
+
+          <div class="select-plan">
+            <div class="panel-2_plan plan-1 plan-active">
+              <img src="assets/images/icon-arcade.svg" alt="" />
+              <div id="plan-1_info" class="panel-2_info">
+                <b>arcade</b>
+                <p class="plan-price plan_1-price">$9/mo</p>
+              </div>
+            </div>
+            <div class="panel-2_plan plan-2">
+              <img src="assets/images/icon-advanced.svg" alt="" />
+              <div id="plan-2_info" class="panel-2_info">
+                <b>advanced</b>
+                <p class="plan-price plan_2-price">$12/mo</p>
+              </div>
+            </div>
+            <div class="panel-2_plan plan-3">
+              <img src="assets/images/icon-pro.svg" alt="" />
+              <div id="plan-3_info" class="panel-2_info">
+                <b>pro</b>
+                <p class="plan-price plan_3-price">$15/mo</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide bar button -->
+          <div class="slideBtn">
+            <p class="slideBtn-month slideBTn-active">monthly</p>
+            <div class="switch">
+              <input type="checkbox" name="" class="slideBtn-checkbox" />
+              <span class="slider round"></span>
+            </div>
+            <p class="slideBtn-year">yearly</p>
+          </div>
+
+          <!-- buttons-panel-2 -->
+
+          <div class="buttons">
+            <button class="btn_next" id="panel-2-btn_next">next step</button>
+            <button class="btn_back" id="panel-2-btn_back">go back</button>
+          </div>
+        </div>
+        <!-- /************************* panel-2 end ********************************/ -->
+        <!-- /************************* panel-3 start ********************************/ -->
+        <div class="panel-3 page">
+          <!-- panel-3 info -->
+          <span class="panel-3__info_container">
+            <h1 class="panel-3_h1">select your plan</h1>
+            <p class="panel-3_p">
+              you have the option of monthly or yearly billing
+            </p>
+          </span>
+
+          <!-- services -->
+          <div class="services">
+            <div class="panel-3_service active-service" id="service_1">
+              <input
+                type="checkbox"
+                id="service_1-input"
+                class="service-check"
+              />
+              <span>
+                <b class="service_name">Online service</b>
+                <p class="service-description">Access to multiplayer games</p>
+              </span>
+              <p class="service_prices service-1_prices">+$1/mo</p>
+            </div>
+            <div class="panel-3_service" id="service_2">
+              <input
+                type="checkbox"
+                id="service_2-input"
+                class="service-check"
+              />
+              <span>
+                <b class="service_name">Larger storage</b>
+                <p class="service-description">Extra 1TB of cloud save</p>
+              </span>
+              <p class="service_prices service-2_prices">+$2/mo</p>
+            </div>
+            <div class="panel-3_service" id="service_3">
+              <input
+                type="checkbox"
+                id="service_3-input"
+                class="service-check"
+              />
+              <span>
+                <b class="service_name">Customizable profile</b>
+                <p class="service-description">Custom theme on your profile</p>
+              </span>
+              <p class="service_prices service-3_prices">+$2/mo</p>
+            </div>
+          </div>
+
+          <!-- buttons-panel-3 -->
+
+          <div class="buttons">
+            <button class="btn_next" id="panel-3-btn_next">next step</button>
+            <button class="btn_back" id="panel-3-btn_back">go back</button>
+          </div>
+        </div>
+        <!-- /************************* panel-3 end ********************************/ -->
+        <!-- /************************* panel-4 start ********************************/ -->
+        <div class="panel-4 page">
+          <!-- panel-4 info -->
+          <span class="panel-4__info_container">
+            <h1 class="panel-4_h1">Finishing up</h1>
+            <p class="panel-4_p">
+              Double-check everything looks OK before confirming
+            </p>
+          </span>
+
+          <!-- panel-4 detail -->
+          <div class="detail">
+            <div class="planDetail">
+              <div class="detailNames">
+                <p>Arcade (monthly)</p>
+                <b class="planDetail_price">$9/mo</b>
+              </div>
+            </div>
+            <button class="detail-btn">Change</button>
+            <div class="line"></div>
+            <div class="detailContainer">
+              <!-- <div class="serviceDetail">
+                <p class="serviceDetail-name">online service</p>
+                <p class="serviceDetail-price">+$1/mo</p>
+              </div>
+              <div class="serviceDetail">
+                <p class="serviceDetail-name">online service</p>
+                <p class="serviceDetail-price">+$1/mo</p>
+              </div> -->
+            </div>
+            <div class="totals">
+              <p class="totals_name">Total (per month)</p>
+              <b class="totals_price">+$9/mo</b>
+            </div>
+          </div>
+
+          <!-- buttons-panel-4 -->
+
+          <div class="buttons">
+            <button class="btn_next" id="panel-4-btn_next">Confirm</button>
+            <button class="btn_back" id="panel-4-btn_back">go back</button>
+          </div>
+        </div>
+        <!-- /************************* panel-4 start ********************************/ -->
+        <!-- /************************* panel-5 start ********************************/ -->
+        <div class="panel-5 page">
+
+          <!-- panel-4 detail -->
+          <div class="panel-5_container">
+            <img class="panel-5_img" src="/assets/images/icon-thank-you.svg" alt="">
+            <div class="panel-5_heading">Thank you</div>
+            <p class="panel-5_description">Thanks for confirming your subscription!We hope you have fun using our platfrom. If you ever need support, pleass feel free to email us at support@frostedgaming.com</p>
+          </div>
+
+        <!-- /************************* panel-5 end ********************************/ -->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

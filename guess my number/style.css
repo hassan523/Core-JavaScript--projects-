@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #222;
+  color: white;
+  font-family: "Press Start 2P", "sans-serif";
+}
+/***************** Header ******************/
+header {
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.headerP {
+  font-size: 2.5rem;
+  position: relative;
+  top: 2rem;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+}
+.container p {
+  margin: 1.8rem;
+}
+.againBtn {
+  background: white;
+  color: black;
+  padding: 1rem 2rem;
+  margin: 0.8rem;
+  font-family: "Press Start 2P", "sans-serif";
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.againBtn:hover,
+.add:hover {
+  background-color: #ccc;
+}
+/******************** Body *******************/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6.4rem;
+}
+.display {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.display p {
+  position: absolute;
+  height: 7rem;
+  color: #222;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 17rem;
+  width: 8rem;
+  z-index: 1;
+  font-size: 3rem;
+}
+.line {
+  position: absolute;
+  width: 100%;
+  background: white;
+  height: 0.6rem;
+}
+.lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 37rem;
+}
+.leftLower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 5rem;
+}
+.leftLower input {
+  background: transparent;
+  padding: 2rem 1rem;
+  border: 5px solid white;
+  outline: none;
+}
+.leftLower input[type="number"] {
+  color: white;
+  font-size: 1.3rem;
+  -moz-appearance: textfield;
+  appearance: 0;
+}
+
+.add {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background: #f9f9f9;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Press Start 2P", "sans-serif";
+  cursor: pointer;
+}
+.rightLower {
+  font-size: 1.4rem;
+  position: absolute;
+  right: 2rem;
+  width: 24rem;
+}
+.guess {
+  margin-bottom: 2rem;
+  height: 4rem;
+}
+.highscore {
+  margin-top: 1rem;
+}
+
+/************************* For same properties ***********************/

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <span class="input-span">
+          <label class="input-names">day</label>
+          <input type="text" class="input" id="day_input" placeholder="DD" />
+          <small></small></span
+        ><span class="input-span">
+          <label class="input-names">month</label>
+          <input type="text" class="input" id="month_input" placeholder="MM" />
+          <small></small></span
+        ><span class="input-span">
+          <label class="input-names">year</label>
+          <input type="text" class="input" id="year_input" placeholder="YYYY" />
+          <small></small
+        ></span>
+      </div>
+      <div class="svgs">
+        <div class="line"></div>
+
+        <button class="age_calculate">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="lowerPart">
+        <div class="firstPart">
+          <span class="day_output">10</span>
+          <p>days</p>
+        </div>
+        <div class="SecPart">
+          <span class="month_output">10</span>
+          <p>month</p>
+        </div>
+        <div class="thirdPart">
+          <span class="year_output">10</span>
+          <p>year</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

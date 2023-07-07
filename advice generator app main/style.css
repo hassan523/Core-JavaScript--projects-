@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 59.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Space Grotesk", sans-serif;
+}
+.container {
+  background-color: hsl(217, 19%, 24%);
+  height: 20rem;
+  width: 28rem;
+  border-radius: 9px;
+  position: relative;
+}
+.advice_no {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 3rem;
+  font-size: 1.2rem;
+  color: hsl(150, 100%, 66%);
+  height: 2rem;
+  letter-spacing: 1px;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+}
+.advice {
+  position: absolute;
+  bottom: 8rem;
+  font-size: 1.2rem;
+  width: 20rem;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  height: 6.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.spreader {
+  position: absolute;
+  bottom: 4rem;
+  left: 1.7rem;
+  fill: white;
+}
+.spreader img {
+  width: 25rem;
+}
+.next_btn {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.next_btn img {
+  padding: 1.5rem;
+}
+
+.next_btn:hover {
+  box-shadow: 1px 1px 20px hsl(150, 100%, 66%);
+  transition: all 0.2s;
+}

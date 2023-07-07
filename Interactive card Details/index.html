@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <!------------------- left sideBody ------------------->
+    <div class="leftSide">
+      <div class="cardFront">
+        <div class="circles">
+          <div class="CircleOne"></div>
+          <div class="circleTwo"></div>
+        </div>
+        <div class="outputNum">0000 0000 0000 0000</div>
+        <div class="cardFrontLower">
+          <div class="outputName">Hassan Shahid</div>
+          <div style="display: flex">
+            <div class="outputExpDate">00</div>
+            /
+            <div class="outputExpYear">00</div>
+          </div>
+        </div>
+      </div>
+      <div class="cardBack">
+        <span
+          style="
+            position: absolute;
+            bottom: 9.13rem;
+            right: 3.8rem;
+            color: hsl(270, 3%, 35%);
+            letter-spacing: 1px;
+          "
+          class="Cvc"
+          >000</span
+        >
+      </div>
+    </div>
+
+    <!---------------- right sideBody --------------->
+    <div class="rightSide">
+      <!--************** for upperInput **************-->
+      <div class="upperInput">
+        <span
+          ><label class="name">cardholder name</label
+          ><input
+            id="nameInput"
+            type="text"
+            class="input"
+            placeholder="e.g. Huhammad Hassan"
+          />
+          <small class="error"></small>
+        </span>
+        <span
+          ><label class="name">card number</label
+          ><input
+            id="cardInput"
+            type="text"
+            class="input"
+            placeholder="e.g. 1654 8165 9154 5483"
+            maxlength="19" /><small class="error"></small
+        ></span>
+      </div>
+      <!--************** for lowerInput **************-->
+      <div class="lowerInput">
+        <span class="ExpSpan"
+          ><label class="name">exp.date(DD/yy)</label>
+          <div id="duoInput">
+            <input
+              id="expDateInput"
+              type="text"
+              class="input"
+              placeholder="DD"
+              maxlength="2"
+            />
+            <input
+              id="expYearInput"
+              type="text"
+              class="input"
+              placeholder="YY"
+              maxlength="4"
+            /><small class="error" id="specError"></small>
+          </div>
+        </span>
+        <span
+          ><label class="name">cvc</label
+          ><input
+            id="cvcInput"
+            type="text"
+            class="input"
+            placeholder="e.g. 123"
+            maxlength="3"
+            required /><small class="error"></small
+        ></span>
+      </div>
+      <button class="add-info">Confirm</button>
+      <div class="lastpage">
+        <div class="svg">
+          <svg
+            width="80"
+            height="80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="40" cy="40" r="40" fill="url(#a)" />
+            <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+            <defs>
+              <linearGradient
+                id="a"
+                x1="-23.014"
+                y1="11.507"
+                x2="0"
+                y2="91.507"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#6348FE" />
+                <stop offset="1" stop-color="#610595" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="message">
+          <span class="first">thank you!</span>
+          <span class="second">We've added your card details</span>
+        </div>
+        <button class="lastpageBtn">continue</button>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,500 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: hsla(228.8, 24.2%, 87.1%, 0.84);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 59rem;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 63rem;
+  height: 80%;
+  border-radius: 18px;
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: row;
+}
+
+/************************************* left panel ************************************/
+.left-panel {
+  background-image: url(assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 95%;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 1rem;
+  width: 19rem;
+  color: white;
+  z-index: 1;
+}
+
+.step-num {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid white;
+  font-weight: 700;
+  flex: 0 0 auto;
+}
+.step-info {
+  margin-left: 1rem;
+}
+.step-info b {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+  position: relative;
+  top: 0.2rem;
+}
+.step-info p {
+  text-transform: uppercase;
+}
+.step {
+  display: flex;
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+  align-items: center;
+}
+.step-active {
+  background: hsl(206, 94%, 87%);
+  color: black;
+  border: transparent;
+}
+/************************* right panel start ********************************/
+.right-panel {
+  position: absolute;
+  right: 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+}
+
+/************************* right panel-1 start ********************************/
+.panel-1,
+.panel-2,
+.panel-3,
+.panel-4,
+.panel-5 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: none;
+}
+.panel-1__info_container,
+.panel-2__info_container,
+.panel-3__info_container,
+.panel-4__info_container {
+  margin-left: 0rem;
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+}
+.panel-1_h1,
+.panel-2_h1,
+.panel-3_h1,
+.panel-4_h1 {
+  position: relative;
+  top: 0.5rem;
+  text-transform: capitalize;
+  color: hsl(213, 96%, 18%);
+}
+.panel-1_p,
+.panel-2_p,
+.panel-3_p,
+.panel-4_p {
+  position: relative;
+  top: 1.2rem;
+  left: 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: hsl(231, 11%, 63%);
+}
+.inputs {
+  position: absolute;
+  left: 2rem;
+}
+
+.panel-1_span {
+  color: hsl(213, 96%, 18%);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: space-between;
+}
+.panel-1_span small {
+  color: red;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.inputFeild {
+  width: 30rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  border: 1px solid black;
+  outline: none;
+  margin-top: 10px;
+  -moz-appearance: textfield;
+  appearance: 0;
+}
+.inputFeild[type="text"],
+[type="number"],
+[type="email"] {
+  padding-left: 0.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: hsl(213, 96%, 18%);
+}
+.panel-1_input {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0rem 3rem 0rem;
+}
+/************************* right panel-1 end ********************************/
+
+/************************* right panel-2 start ********************************/
+/* panel-2-select plan */
+.select-plan {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 11rem;
+  position: absolute;
+  top: 15rem;
+  align-items: center;
+}
+.panel-2_plan {
+  padding: 3rem;
+  flex: 0 0 auto;
+  border: 1px solid black;
+  border-radius: 11px;
+  position: relative;
+  width: 3.5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.plan-active {
+  background: hsl(217, 100%, 97%);
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.panel-2_plan img {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.panel-2_info {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+}
+
+.panel-2_info b {
+  color: hsl(213, 96%, 18%);
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.plan-price {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* panel-2 slider */
+.slideBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  text-transform: capitalize;
+  position: relative;
+  top: 6rem;
+  background-color: hsl(217, 100%, 97%);
+}
+.slideBtn-month {
+  margin-right: 1rem;
+  color: hsl(213, 96%, 18%);
+}
+.slideBtn-year {
+  margin-left: 1rem;
+  color: hsl(213, 96%, 18%);
+}
+.slideBTn-active {
+  font-weight: 600;
+}
+.switch {
+  width: 3.2rem;
+  display: inline-block;
+  height: 1.5rem;
+  position: relative;
+}
+.switch input {
+  position: relative;
+  opacity: 0;
+  width: 3.1rem;
+  height: 1.5rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: hsl(213, 96%, 18%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: 4px;
+  top: 4px;
+  background-color: white;
+  transition: all 0.4s;
+}
+.round {
+  border-radius: 37px;
+}
+.round::before {
+  border-radius: 50%;
+}
+.slideBtn-checkbox:checked + .slider::before {
+  transform: translateX(27px);
+}
+.buttons {
+  display: flex;
+  width: 85%;
+  position: absolute;
+  bottom: 4rem;
+  justify-content: space-between;
+  right: 3rem;
+  flex-direction: row-reverse;
+}
+.btn_back {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: hsl(213, 96%, 18%);
+  cursor: pointer;
+  position: relative;
+}
+.btn_next {
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1rem;
+  background-color: hsl(243, 100%, 62%);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+}
+
+/**************************** right panel-2 end ********************************/
+
+/**************************** right panel-3 start ********************************/
+
+/* panel-3 services */
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 26rem;
+  justify-content: center;
+}
+.panel-3_service {
+  margin: 3rem 0rem 0rem 3rem;
+  border: 1px solid black;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  width: 34rem;
+  height: 6rem;
+  flex: 0 0 auto;
+  position: relative;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.active-service {
+  border-color: hsl(243, 100%, 62%);
+  background: hsl(217, 100%, 97%);
+}
+.panel-3_service input {
+  display: inline;
+  position: absolute;
+  left: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+}
+.panel-3_service span {
+  position: absolute;
+  left: 4rem;
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.3px;
+}
+.panel-3_service span b {
+  font-weight: bold;
+  color: hsl(213, 96%, 18%);
+}
+.panel-3_service span p {
+  color: hsl(231, 11%, 63%);
+}
+.service_prices {
+  position: absolute;
+  right: 1.5rem;
+  color: blue;
+}
+/************************* right panel-3 end ********************************/
+
+/************************* right panel-4 start ********************************/
+.detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  height: 24rem;
+  align-items: center;
+  text-transform: capitalize;
+}
+.planDetail {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  color: hsl(213, 96%, 18%);
+}
+.detailNames {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  justify-content: space-between;
+  width: 26rem;
+}
+.detailNames p {
+  font-weight: 600;
+  color: hsl(213, 96%, 18%);
+}
+.detail-btn {
+  width: 4rem;
+  background: transparent;
+  border: none;
+  text-decoration-line: underline;
+  color: blue;
+  font-size: 1rem;
+  position: relative;
+  right: 11.2rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+.line {
+  margin-top: 2rem;
+  height: 1px;
+  background-color: hsl(231, 11%, 63%);
+  width: 26rem;
+}
+.detailContainer {
+  width: 26rem;
+  margin-top: 1.5rem;
+  overflow-y: scroll;
+}
+.serviceDetail {
+  display: flex;
+  justify-content: space-between;
+  width: 23rem;
+  margin-top: 1rem;
+  height: auto;
+  position: relative;
+  left: 1rem;
+}
+.serviceDetail-name {
+  color: hsl(231, 11%, 63%);
+  position: relative;
+  right: 0.5rem;
+}
+.serviceDetail-price {
+  text-transform: capitalize;
+}
+.totals {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 3.5rem;
+  text-transform: capitalize;
+}
+.totals p {
+  position: relative;
+  left: 0.2rem;
+  color: hsl(231, 11%, 63%);
+}
+.totals b {
+  font-size: 1.3rem;
+  position: relative;
+  right: 0.7rem;
+  font-weight: bolder;
+  color: #1717fbab;
+}
+/************************* right panel-4 end ********************************/
+.panel-5_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.panel-5_heading {
+  margin: 1rem 0rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: hsl(213, 96%, 18%);
+}
+.panel-5_img {
+  width: 6rem;
+}
+.panel-5_description {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: hsl(231, 11%, 63%);
+  width: 35rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+@media all and (max-width: 1450px) {
+  html {
+    font-size: 85%;
+    top: 5rem;
+    position: relative;
+  }
+}

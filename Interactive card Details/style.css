@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+}
+.leftSide {
+  background-image: url(images/bg-main-desktop.png);
+  background-size: cover;
+  width: fit-content;
+  height: fit-content;
+  height: 60rem;
+  width: 38rem;
+}
+.rightSide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.upperInput {
+  display: flex;
+  flex-direction: column;
+}
+.upperInput span {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.8rem;
+}
+.upperInput span input {
+  width: 19rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  border: 1px solid;
+}
+.lowerInput {
+  display: flex;
+  margin-top: 3rem;
+}
+.lowerInput span {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  width: fit-content;
+  letter-spacing: 2px;
+}
+.ExpSpan {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#specError {
+  top: 3.8rem;
+  position: absolute;
+  left: 0;
+}
+/******************* card front **********************/
+.cardFront {
+  background-image: url(images/bg-card-front.png);
+  background-repeat: no-repeat;
+  height: 15.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  top: 7rem;
+  left: 9rem;
+  width: 28rem;
+}
+.CircleOne {
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+  left: 3rem;
+  top: 1.5rem;
+}
+.circleTwo {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  position: absolute;
+  left: 7rem;
+  top: 2.1rem;
+  border: 1px solid white;
+}
+.outputNum {
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 6rem;
+  letter-spacing: 3px;
+}
+.outputName {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.2rem;
+  letter-spacing: 1.5px;
+}
+.cardFrontLower {
+  display: flex;
+  justify-content: space-between;
+  width: 23rem;
+  margin-top: 1.2rem;
+  letter-spacing: 1px;
+}
+/*********************************card back*****************************/
+.cardBack {
+  background-image: url(images/bg-card-back.png);
+  background-size: 26.5rem;
+  width: 27rem;
+  height: 17rem;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 10rem;
+  left: 20rem;
+}
+/********************************* input fields **************************/
+#expDateInput {
+  width: 4rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  border: 1px solid;
+  margin-right: 0.5rem;
+}
+#expYearInput {
+  width: 4rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  border: 1px solid;
+}
+#cvcInput {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  border: 1px solid;
+}
+
+.input[type="text"],
+.input::placeholder {
+  color: hsl(279, 6%, 55%);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.input[type="text"] {
+  color: black;
+}
+.input {
+  padding-left: 5px;
+  outline: none;
+}
+/***************************** last page *********************/
+
+.lastpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+  position: relative;
+  bottom: 12rem;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+.first {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.second {
+  letter-spacing: 2px;
+  color: hsl(270, 3%, 35%);
+}
+.lastpageBtn {
+  background-color: hsl(278, 94%, 30%);
+  position: relative;
+  top: 1rem;
+  padding: 0.5rem 9rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+/***************************** error *************************/
+small {
+  color: red;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+/***************************** Button *************************/
+.add-info {
+  background-color: hsl(278, 94%, 30%);
+  position: relative;
+  top: 3rem;
+  padding: 0.5rem 9rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/********  changing pages  *******/
+.remove {
+  visibility: hidden;
+}
+.lastpage {
+  visibility: hidden;
+  display: none;
+}
+.addLastPage {
+  visibility: visible;
+  display: flex;
+}
+@media only screen and (max-width: 1450px) {
+  .cardBack {
+    left: 4rem;
+  }
+  .cardFront {
+    left: 5rem;
+  }
+}
