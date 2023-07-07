@@ -1,2 +1,2 @@
 # Core-JavaScript--projects-
- In this folder, I have multiple projects built using core JavaScript.
+ In this folder, I have built multiple projects using core JavaScript.
